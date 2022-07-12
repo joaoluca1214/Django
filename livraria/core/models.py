@@ -41,4 +41,4 @@ class Livro(models.Model):
     preco = models.DecimalField(max_digits=7, decimal_places=2)
  
     def __str__(self):
-        return f'{self.titulo} ({self.quantidade})'
+        return f'{self.titulo} ({self.quantidade}) - R${self.preco}'
